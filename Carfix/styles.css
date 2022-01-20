@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #087bc2;
+    color: white;
+    padding: 1em 4em;
+    border-bottom: 0.2em solid crimson;
+    align-items: center;
+}
+span{
+    color: crimson;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+li{
+    margin: 0.1em 1em;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+#active{
+    color: yellow;
+}
+.top{
+    background-image: url(./Images/garage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 14, 207);
+    padding: 6em 0;
+}
+.top>div{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5em 1em;
+}
+h2{
+    font-size: 3em;
+}
+#p1{
+    margin-top: 1em;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+    background-color: #087bc2;
+    padding: 0.7em 4em;
+    color: white;
+}
+h3{
+    align-self: center;
+    font-size: 1.2em;
+}
+#b1{
+    background-color: crimson;
+    color:white;
+    padding: 0.8em;
+    border: none;
+    font-size: 0.8em;
+}
+input{
+    padding: 0.8em;
+    border: none;
+    font-size: 0.8em;
+    width: 17em;
+    text-align: left;
+}
+.bottom{
+    display: flex;
+    margin: 0.9em 4em 0.6em 4em;
+}
+#div1, #div2, #div3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+.homeImage{
+    height: 14em;
+    margin-bottom: 0.5em;
+}
+footer{
+    background-color: crimson;
+    color: white;
+    padding: 0.6em 4em;
+    display: flex;
+    justify-content: space-between;
+}
+#p2, #p3{
+    margin: 0;
+}
+#aboutD1{
+    flex: 2;
+}
+#aboutD2{
+    background-color: #0b639b;
+    color: white;
+    margin: 1em 2em;
+    padding: 1em;
+    flex: 1;
+}
+h4, #aboutD1>p, #aboutD2>p{
+    text-align: left;
+}
+#aboutD1>p, #aboutD2>p{
+    font-size: 1em;
+    margin-top: 1em;
+}
+#servD1{
+    flex: 5;
+}
+#servD2{
+    background-color: #0b639b;
+    color: white;
+    margin: 1em 2em;
+    padding: 1em 1.2em;
+    flex: 1 0 180px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.servD1{
+    background-color: rgb(228, 227, 227);
+    border: 1px solid darkgrey;
+    margin: 0.3em 2em;
+    padding: 1em;
+}
+.servD1>p{
+    text-align: left;
+    margin: 1em 0;
+    font-size: 1em;
+}
+#servD2>p, #contactD2>p{
+    text-align: left;
+    margin: 0.1em 0;
+}
+#servD2>h4, #contactD2>h4{
+    margin-bottom: 1em;
+}
+#servD2>#b1, #contactD2>#b1{
+    margin-top: 0.5em;
+    width: 6em;
+}
+#servD2>input, #contactD2>input{
+    width: 100%;
+    text-align: left;
+}
+#servD2>textarea, #contactD2>textarea{
+    width: 100%;
+    text-align: left;
+    padding: 0.5em;
+}
+#contactD1{
+    flex: 0 0 340px;
+}
+#contactD2{
+    background-color: #0b639b;
+    color: white;
+    margin: 1em 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+#contactD1 > p{
+    font-size: 1.5em;
+    text-align: left;
+    margin: 1em;
+}
+.carouselImg{
+    height: 700px;
+    margin: 10px 0;
+}
+@media (max-width:768px){
+    header, .middle, .bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        padding: 1em 0;
+    }
+    .middle{
+        padding: 0.7em 0;
+    }
+    .bottom{
+        margin: 0.9em 2em 0.6em 2em;
+    }
+    ul{
+        padding: 0;
+    }
+    #servD2, #aboutD2, #contactD2{
+        align-self: stretch;
+    }
+    #aboutD2{
+        margin: 1em 0;
+    }
+    .servD1{
+        margin: 0.3em 0;
+    }
+    #servD2, #contactD2{
+        margin: 1em 0;
+    }
+    #contactD1{
+        flex:none;
+    }
+    #contactD1>p{
+        font-size: 1.2em;
+    }
+    footer{
+        padding: 0.6em 1em;
+    }
+}
